@@ -1,0 +1,423 @@
+body {
+    margin: 0%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    width: 100vw;
+}
+
+/* menu bar */
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    min-height: 40px;
+    height: 6vh;
+    color: #FFFAFB;
+    z-index: 10;
+}
+
+.menu-down {
+    background-color: #2B2C28;
+    border-bottom: solid 6px #7DE2D1;
+}
+
+#menu-btns, #home-btn {
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+}
+
+#menu-btns a, #home-btn a {
+    height: 100%;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #FFFAFB;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+#menu-btns a:last-of-type {
+    border-right: 0px;
+}
+
+#menu-btns a:hover , #home-btn a:hover {
+    color: #131515;
+    background-color: #7DE2D1;
+}
+
+#menu-btns span, #home-btn span {
+    margin-left: 6px;
+}
+
+/* Home section*/
+#home {
+    display: flex;
+    height: 100vh;
+    min-height: 600px;
+    background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url("../images/code-1076536_1920.jpg");
+    background-size: 100% 100%;
+    color: #F1F1E6;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home h1 {
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+#home h2 {
+    font-weight: lighter;
+    font-size: 2.5em;
+}
+
+#home hr {
+    /* stop hr from getting too small or too big    */
+    min-width: 500px;
+    max-width: 1000px;
+    width: 60%;
+}
+
+
+/* Site sections */
+#about,
+#skills,
+#exp,
+#projects,
+#contact {
+    /*    height: 100vh;*/
+    /*    min-height: 1100px;*/
+    background-color: #2B2C28;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 20vh;
+    min-height: 200px;
+    background-color: #339989;
+    color: #FFFAFB;
+    text-shadow: 2px 2px 1px #131515;
+    font-size: 24px;
+    border-bottom: solid 6px #7DE2D1;
+}
+
+.section-header hr {
+    width: 300px;
+    border: solid #7DE2D1 2px;
+}
+
+.section-body {
+    margin: 0vh 10vw 0vh 10vw;
+    color: #131515;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 800px;
+}
+
+.section-content {
+    background-color: #339989;
+    text-shadow: 0px 0px 4px black;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFAFB;
+    border: solid 6px #7DE2D1;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* about section */
+
+#about article {
+    /*    height: 20vh;*/
+}
+
+#about img {
+    width: 20vw;
+    border: solid 3px #7DE2D1;
+    border-radius: 20px;
+    max-width: 350;
+    margin-bottom: 20px;
+}
+
+#about p {
+    width: 35vw;
+}
+
+/* skills section*/
+
+/*
+#skills .sectionbody{
+    display: inline-block;
+}
+*/
+
+.skill-list {
+    background-color: #339989;
+    text-shadow: 0px 0px 4px black;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFAFB;
+    border: solid 6px #7DE2D1;
+    border-radius: 20px;
+    padding: 20px;
+    width: 30vw;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.skill-list ul {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-list li {
+    width: 50%;
+}
+
+.skill-list hr {
+    width: 300px;
+    border: solid #7DE2D1 2px;
+}
+
+.skill-list ul li i{
+    font-size: 2em;
+}
+
+/* Experiance section */
+
+#tl {
+    display: block;
+}
+
+#timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.tl-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 45%;
+}
+
+/* The circles on the timeline */
+.tl-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #339989;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.tl-left {
+    left: -20px;
+}
+
+/* Place the container to the right */
+.tl-right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.tl-left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.tl-right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.tl-right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.tl-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Contact section*/
+#contact .section-body {
+    flex-wrap: wrap;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 400px;
+}
+
+#form label,
+input,
+textarea,
+button {
+    margin-top: 10px;
+}
+
+#form button {
+    width: 80px;
+}
+
+#contact-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.contact-item {
+    min-width: 168px;
+    padding: 10px;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-item i {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#contact-options a {
+    text-decoration: none;
+    width: 50%;
+    min-width: 200px;
+}
+
+footer {
+    text-align: center;
+    background-color: #339989;
+    padding: 20px 0px;
+    color: #FFFAFB;
+}
+
+
+
+
+/* Media queries */
+@media screen and (max-width: 1200px) {
+
+
+    #tl {
+        margin: 0% 20%;
+    }
+
+    /* Place the timelime to the left */
+    #timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .tl-container {
+        width: 80%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .tl-container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .tl-left::after,
+    .tl-right::after {
+        left: 15px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .tl-right,
+    .tl-left {
+        left: 0%;
+    }
+    
+     #about img{
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #tl {
+        margin: 0% 0%;
+    }
+
+    .section-body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    .skill-list {
+        width: 70%;
+        margin-top: 10px;
+    }
+    
+    #about p {
+    width: 70vw;
+}
+    #about img{
+        width: 50vw;
+    }
+}
