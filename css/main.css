@@ -19,10 +19,12 @@ main {
     height: 6vh;
     color: #FFFAFB;
     z-index: 10;
+    background-image:radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
 }
 
 .menu-down {
-    background-color: #2B2C28;
+    background: none #2B2C28 !important;
+/*    background-color: #2B2C28;*/
     border-bottom: solid 6px #7DE2D1;
 }
 
@@ -60,12 +62,13 @@ main {
     display: flex;
     height: 100vh;
     min-height: 600px;
-    background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url("../images/code-1076536_1920.jpg");
+    background-image:url("../images/code-1076536_1920.jpg");
     background-size: 100% 100%;
     color: #F1F1E6;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 #home h1 {
@@ -156,12 +159,6 @@ main {
 }
 
 /* skills section*/
-
-/*
-#skills .sectionbody{
-    display: inline-block;
-}
-*/
 
 .skill-list {
     background-color: #339989;
@@ -297,21 +294,21 @@ main {
     flex-wrap: wrap;
 }
 
-#form {
+#contact-form {
     display: flex;
     flex-direction: column;
     width: 40%;
     min-width: 400px;
 }
 
-#form label,
+#contact-form label,
 input,
 textarea,
 button {
     margin-top: 10px;
 }
 
-#form button {
+#contact-form button {
     width: 80px;
 }
 
@@ -405,7 +402,6 @@ footer {
 
     .section-body {
         flex-direction: column;
-        height: auto;
         padding: 20px 0px;
     }
 
@@ -420,4 +416,19 @@ footer {
     #about img{
         width: 50vw;
     }
+    
+    #contact-options{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        min-width: 400px;
+    }
+    
+    #contact-options a{
+        width: 100%;
+    }
+
+    
+    
+        
+    
 }
