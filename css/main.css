@@ -9,6 +9,10 @@ main {
 
 /* menu bar */
 
+.menu-btns {
+        display: flex;
+}
+
 #menu {
     display: flex;
     justify-content: space-around;
@@ -22,16 +26,24 @@ main {
     background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
 }
 
+
+
+#home-btn #icon {
+    display: none;
+}
+
 .menu-down {
     background: none #2B2C28 !important;
     /*    background-color: #2B2C28;*/
     border-bottom: solid 6px #7DE2D1;
 }
 
+#home-btn{
+    display: flex;
+}
 #menu-btns,
 #home-btn {
     list-style-type: none;
-    display: flex;
     height: 100%;
 }
 
@@ -117,6 +129,7 @@ main {
     text-shadow: 2px 2px 1px #131515;
     font-size: 24px;
     border-bottom: solid 6px #7DE2D1;
+    text-align: center;
 }
 
 .section-header hr {
@@ -399,14 +412,75 @@ footer {
         margin: 0% 0%;
     }
 
+    /* responsive menu   */
+    .menu-btns{
+        display: none;
+    }
+    
+    .show {
+        display: flex;
+    }
+
+    #home-btn #icon {
+        display: block;
+    }
+
+    #menu,
+    #menu-btns {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: 100%;
+    }
+
+
+
+    #menu-btns {
+        align-items: stretch;
+    }
+
+    #home-btn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #menu a,
+    #menu-btns a {
+        font-size: 3em;
+        padding: 30px;
+    }
+
+
+    /* sections */
+
     .section-body {
         flex-direction: column;
         padding: 20px 0px;
+        margin: 0px;
+    }
+    
+    .section-header{
+        font-size: 3em;
+        padding-top: 100px;
+    }
+    
+    .section-header h1{
+        margin: 0px
+    }
+
+    .section-content,
+    .skill-list {
+        font-size: 2em;
     }
 
     .skill-list {
         width: 70%;
         margin-top: 10px;
+    }
+    
+    #home-title{
+        width: 90%;
     }
 
     #about p {
@@ -419,22 +493,13 @@ footer {
 
     #contact-options {
         flex-direction: column;
-        min-width: 90%;
+        min-width: 80%;
     }
 
     #contact-options a {
         width: 100%;
     }
-
-    .section-content,
-    .skill-list {
-        font-size: 2em;
-    }
-
-    .section-body {
-        margin: 0px;
-    }
-
+    
     #contact-form {
         width: 90%;
         min-width: 400px;

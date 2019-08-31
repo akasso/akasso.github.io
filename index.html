@@ -17,21 +17,24 @@
                 <a href="#home">
                     <i class="fas fa-home"></i><span>Home</span>
                 </a>
+                <a href="javascript:void(0);" id="icon" onclick="menuToggle()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
-            <div id="menu-btns">
-                <a href="#about">
+            <div id="menu-btns" class="menu-btns">
+                <a href="#about" onclick="menuToggle()">
                     <div><i class="far fa-comment-alt"></i><span>About</span></div>
                 </a>
-                <a href="#skills">
+                <a href="#skills" onclick="menuToggle()">
                     <div><i class="fas fa-code"></i><span>Skills</span></div>
                 </a>
-                <a href="#exp">
+                <a href="#exp" onclick="menuToggle()">
                     <div><i class="fas fa-briefcase"></i><span>Experience</span></div>
                 </a>
-                <a href="#projects">
+                <a href="#projects" onclick="menuToggle()">
                     <div><i class="far fa-file-code"></i><span>Projects</span></div>
                 </a>
-                <a href="#contact">
+                <a href="#contact" onclick="menuToggle()">
                     <div><i class="far fa-address-book"></i><span>Contact</span></div>
                 </a>
             </div>
@@ -40,7 +43,7 @@
 
     <main>
         <section id="home">
-            <div class="section-content">
+            <div id="home-title" class="section-content">
                 <div title="Aladdin is another way to pronounce my name">
                     <h1>Alaa Eddin Kasso</h1>
                 </div>
