@@ -80,7 +80,6 @@ main {
     min-height: 600px;
     background-image: url("../images/code-1076536_1920.jpg");
     background-size: 100% 100%;
-    color: #F1F1E6;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -102,6 +101,7 @@ main {
     min-width: 500px;
     max-width: 1000px;
     width: 60%;
+    border: solid #7DE2D1 2px;
 }
 
 
@@ -111,9 +111,7 @@ main {
 #exp,
 #projects,
 #contact {
-    /*    height: 100vh;*/
-    /*    min-height: 1100px;*/
-    background-color: #2B2C28;
+    background-color: #A9A9A9;
 }
 
 .section-header {
@@ -124,9 +122,9 @@ main {
     flex-direction: column;
     height: 20vh;
     min-height: 200px;
-    background-color: #339989;
-    color: #FFFAFB;
-    text-shadow: 2px 2px 1px #131515;
+    background-color: #BFEDEF;
+    color: #2b2c28;
+    text-shadow: 2px 2px 1px #B1B2B0;
     font-size: 24px;
     border-bottom: solid 6px #7DE2D1;
     text-align: center;
@@ -139,7 +137,6 @@ main {
 
 .section-body {
     margin: 0vh 10vw 0vh 10vw;
-    color: #131515;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -147,12 +144,12 @@ main {
 }
 
 .section-content {
-    background-color: #339989;
-    text-shadow: 0px 0px 4px black;
+    background-color: #FFFDFD;
+    text-shadow: 0px 0px 2px #B1B2B0;
     font-weight: bold;
     font-size: 20px;
-    color: #FFFAFB;
-    border: solid 6px #7DE2D1;
+    color: #2b2c28;
+    border: solid 1px #A9A9A9;
     border-radius: 20px;
     padding: 20px;
 }
@@ -165,7 +162,7 @@ main {
 
 #about img {
     width: 20vw;
-    border: solid 3px #7DE2D1;
+    border: solid 1px #A9A9A9;
     border-radius: 20px;
     max-width: 350;
     margin-bottom: 20px;
@@ -178,17 +175,17 @@ main {
 /* skills section*/
 
 .skill-list {
-    background-color: #339989;
-    text-shadow: 0px 0px 4px black;
+    background-color: #FFFDFD;
+    text-shadow: 1px 1px 4px #B1B2B0;
     font-weight: bold;
     font-size: 20px;
-    color: #FFFAFB;
-    border: solid 6px #7DE2D1;
+    color: ##B1B2B0;
     border-radius: 20px;
     padding: 20px;
     width: 30vw;
     text-align: center;
     margin: 20px 0px;
+    border: solid 1px #A9A9A9;
 }
 
 .skill-list ul {
@@ -249,7 +246,7 @@ main {
     height: 25px;
     right: -17px;
     background-color: white;
-    border: 4px solid #339989;
+    border: 4px solid #7DE2D1;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -347,6 +344,13 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 5px 7px #888888;
+}
+
+.contact-item:hover{
+    box-shadow: none;
+    color: #131515;
+    background-color: #7DE2D1;
 }
 
 .contact-item i {
@@ -362,9 +366,9 @@ button {
 
 footer {
     text-align: center;
-    background-color: #339989;
     padding: 20px 0px;
-    color: #FFFAFB;
+    color: #131515;
+    background-color: #7DE2D1;
 }
 
 
