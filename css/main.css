@@ -10,7 +10,7 @@ main {
 /* menu bar */
 
 .menu-btns {
-        display: flex;
+    display: flex;
 }
 
 #menu {
@@ -37,9 +37,10 @@ main {
     border-bottom: solid 6px #4BC6B9;
 }
 
-#home-btn{
+#home-btn {
     display: flex;
 }
+
 #menu-btns,
 #home-btn {
     list-style-type: none;
@@ -97,8 +98,8 @@ main {
 
 #home hr {
     /* stop hr from getting too small or too big    */
-    min-width: 500px;
-    max-width: 1000px;
+    /* min-width: 500px;
+    max-width: 1000px; */
     width: 60%;
     border: solid #4BC6B9 2px;
 }
@@ -123,7 +124,7 @@ main {
     min-height: 200px;
     background-color: #134074;
     color: #4BC6B9;
-/*    text-shadow: 2px 2px 1px #B1B2B0;*/
+    /*    text-shadow: 2px 2px 1px #B1B2B0;*/
     font-size: 26px;
     border-bottom: solid 6px #4BC6B9;
     text-align: center;
@@ -347,7 +348,7 @@ button {
     box-shadow: 5px 7px #888888;
 }
 
-.contact-item:hover{
+.contact-item:hover {
     box-shadow: none;
     color: #131515;
     background-color: #7DE2D1;
@@ -388,7 +389,7 @@ footer {
         width: 90%;
         padding-left: 70px;
         padding-right: 25px;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     /* Make sure that all arrows are pointing leftwards */
@@ -417,10 +418,10 @@ footer {
     }
 
     /* responsive menu   */
-    .menu-btns{
+    .menu-btns {
         display: none;
     }
-    
+
     .show {
         display: flex;
     }
@@ -451,8 +452,18 @@ footer {
 
     #menu a,
     #menu-btns a {
-        font-size: 3em;
+        font-size: 1.5em;
         padding: 30px;
+    }
+
+    #home h1,
+    #home h2 {
+        font-weight: bolder;
+        font-size: 1em;
+    }
+    
+    #home-title.section-content{
+        width: 70%;
     }
 
 
@@ -463,13 +474,13 @@ footer {
         padding: 20px 0px;
         margin: 0px;
     }
-    
-    .section-header{
+
+    .section-header {
         font-size: 3em;
         padding-top: 100px;
     }
-    
-    .section-header h1{
+
+    .section-header h1 {
         margin: 0px
     }
 
@@ -482,13 +493,14 @@ footer {
         width: 70%;
         margin-top: 10px;
     }
-    
-    #home-title{
+
+    #home-title {
         width: 90%;
     }
 
     #about p {
         width: 70vw;
+        font-size: 0.8em;
     }
 
     #about img {
@@ -503,7 +515,7 @@ footer {
     #contact-options a {
         width: 100%;
     }
-    
+
     #contact-form {
         width: 90%;
         min-width: 400px;
